@@ -4,7 +4,7 @@
 
 ## GitHub Pages
 
-Сайт: **https://learn-iad.github.io/AI-1/** (после включения Pages и push в `main`).
+Сайт: **https://learn-iad.github.io/AI-2/** (после включения Pages и push в `main`).
 
 1. Репозиторий → **Settings** → **Pages** → Source: **GitHub Actions**.
 2. Push в ветку `main` — workflow `.github/workflows/deploy-pages.yml` соберёт и выложит папку `dist`.
@@ -19,7 +19,7 @@
 
 1. **Settings → Pages → Build and deployment → Source** — выберите **GitHub Actions**, не «Deploy from a branch».
 2. **Actions → Deploy to GitHub Pages** → откройте последний запуск на `main` → **Re-run all jobs** (или сделайте push в `main`).
-3. Успешный деплой: в HTML должны быть пути вида `/AI-1/assets/index-….js`, не `/src/main.ts`.
+3. Успешный деплой: в HTML должны быть пути вида `/AI-2/assets/index-….js`, не `/src/main.ts`.
 
 Workflow `Deploy to GitHub Pages` должен быть **зелёным**. Если шаг `deploy-pages` падает, чаще всего Pages ещё не переключили на GitHub Actions (п. 1).
 
@@ -36,7 +36,7 @@ npm install
 npm run dev
 ```
 
-Для локального dev базовый путь `/AI-1/` совпадает с Pages. Открывайте URL из терминала Vite.
+Для локального dev базовый путь `/AI-2/` совпадает с Pages. Открывайте URL из терминала Vite (не корень `localhost`, а путь с `/AI-2/`).
 
 ```bash
 npm run build    # результат в dist/

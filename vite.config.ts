@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 
-/** Репозиторий learn-iad/AI-1 → https://learn-iad.github.io/AI-1/ */
+/** Project Pages: https://learn-iad.github.io/AI-2/ */
 export default defineConfig({
-  base: "/AI-1/",
+  base: "/AI-2/",
 });
